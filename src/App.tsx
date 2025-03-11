@@ -1,8 +1,15 @@
+import { Expenses } from "./components/expensesTable";
+
 function App() {
   return (
-    <div id="template-text">
-      <h1>React Starter Template</h1>
-      <p>A lightweight React starter template in TypeScript and Vite</p>
+    <div className="w-full p-8">
+      <h1 className="text-3xl font-extrabold text-center">Expenses</h1>
+
+      <div className="flex flex-col items-center justify-center p-4 mt-5 w-full">
+        <div className="w-full mx-auto p-10">
+          <Expenses />
+        </div>
+      </div>
     </div>
   );
 }
